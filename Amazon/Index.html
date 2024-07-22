@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/favicon">
+    <style>
+        @media (max-width: 1100px) {
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body {
+                background-color: lightgray;
+            }
+
+            /* NavBar-1  */
+            .navbar-1 {
+                width: 100%;
+                height: 60px;
+                background-color: #0f1111;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .logo {
+                /* border: 2px solid white; */
+                width: 90px;
+                height: 45px;
+                margin-top: 7px;
+                cursor: pointer;
+            }
+
+            .location {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                /* border: 2px solid red; */
+            }
+
+            .location i {
+                color: white;
+                font-size: 15px;
+            }
+
+            .address p {
+                color: white;
+                font-size: 10px;
+                padding-left: 3px;
+            }
+
+            .input-section {
+                /* border: 2px solid palegreen; */
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .input-section p {
+                color: gray;
+                background-color: white;
+                height: 22px;
+                width: 28px;
+                padding: 6px 0px 0px 6px;
+                font-size: 15px;
+                font-weight: bolder;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+
+            .input-section input {
+                height: 27px;
+                width: 300px;
+                /* border-radius: 7px; */
+            }
+
+            input::placeholder {
+                padding-left: 8px;
+                font-size: 12px;
+            }
+
+            #search-icon {
+                color: black;
+                background-color: orange;
+                height: 22px;
+                width: 22px;
+                padding: 6px 0px 0px 6px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+
+
+            /* Accounts  */
+            .accounts {
+                /* border: 2px solid red; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .first {
+                color: white;
+                font-size: 8px;
+            }
+
+            .second {
+                color: white;
+                font-size: 12px;
+                font-weight: bolder;
+            }
+
+            /* Cart  */
+            .cart {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                /* border: 2px solid orange; */
+            }
+
+            .cart i {
+                font-size: 18px;
+                color: white;
+                /* border: 2px solid red; */
+                padding-top: 10px;
+            }
+
+            .cart p {
+                color: white;
+                font-size: 10px;
+                font-weight: bolder;
+            }
+
+
+            /* Nav-bar-2  */
+            .Navbar-2 {
+                width: 100%;
+                height: 45px;
+                background-color: #232f3e;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .burger {
+                /* position: absolute; */
+                cursor: pointer;
+                /* padding: 10px; */
+                /* border:  2px solid black; */
+                width: 33px;
+                height: 20px;
+                /* margin: 5px 10px; */
+            }
+
+            .line {
+                width: 30px;
+                background-color: white;
+                height: 3px;
+                margin: 3px 3px;
+            }
+
+            .Navbar-2 p {
+                color: white;
+                font-size: 10px;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+            /* Main-Section  */
+            .poster {
+                width: 100%;
+                height: 400px;
+                cursor: pointer;
+            }
+
+            /* Container-1  */
+            .container-1 {
+                width: 100%;
+                height: 340px;
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .box {
+                width: 23%;
+                height: 320px;
+                background-color: white;
+                /* border: 2px solid red; */
+            }
+
+            #heading {
+                font-size: 14px;
+                font-weight: bolder;
+                padding: 5px 5px;
+            }
+
+            .images {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 3px;
+                grid-row-gap: 10px;
+                grid-column-gap: 6px;
+                margin-top: 3px;
+            }
+
+            .images img {
+                width: 90%;
+                height: 100px;
+                cursor: pointer;
+            }
+
+            #last-heading {
+                font-size: 10px;
+            }
+
+            #second-box-last-heading {
+                font-size: 10px;
+            }
+
+            /* CONTAINER-2  */
+            .container-2 {
+                width: 100%;
+                height: 340px;
+                /* border: 2px solid darkorchid; */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .farzi {
+                width: 47.5%;
+                height: 320px;
+            }
+
+            #headphones {
+                width: 200px;
+                height: 200px;
+                padding: 0px 7px;
+            }
+
+            #shop-now {
+                font-size: 10px;
+                color: #007185;
+                font-weight: bolder;
+                padding: 15px 10px;
+            }
+
+            /* CONTAINER-3  */
+            .container-3 {
+                width: 100%;
+                height: 450px;
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            #oil {
+                height: 200px;
+            }
+
+            .jsn {
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+            }
+
+            .jsn img {
+                height: 200px;
+                padding: 0px 7px 0px 7px;
+            }
+
+
+            /* CONTAINER-4  */
+            .container-4 {
+                width: 100%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px solid blue; */
+            }
+
+            /* CONTAINER-5  */
+            .container-5 {
+                width: 100%;
+                height: 400px;
+                /* border: 2px solid black; */
+                margin-top: 13px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .fitness {
+                display: flex;
+                justify-content: center;
+                height: 220px;
+                /* border: 2px solid black; */
+            }
+
+            .fitness img {
+                height: 220px;
+                padding: 0px 15px 0px 15px;
+                cursor: pointer;
+            }
+
+            /* CONTAINER-6  */
+            .container-6 {
+                width: 96.5%;
+                height: 270px;
+                /* border: 2px solid rebeccapurple; */
+                background-color: white;
+                margin: 0px 20px;
+            }
+
+            .heading-container {
+                width: 100%;
+                height: 65px;
+                display: flex;
+                /* border: 2px solid red; */
+            }
+
+            .kitchen-items {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .kitchen-items img {
+                width: 170px;
+                height: 170px;
+            }
+
+
+            /* CONTAINER-7  */
+            .container-7 {
+                width: 100%;
+                height: 400px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                /* border: 2px solid black; */
+            }
+
+            /* INTERNATIONAL-BRAND IMAGE  */
+            .ib {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 220px;
+                cursor: pointer;
+            }
+
+            /* CONTINAER-8  */
+            .container-8 {
+                width: 100%;
+                height: 160px;
+                background-color: white;
+                /* border: 1px solid black; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px;
+            }
+
+            .sign {
+                width: 100%;
+                height: 120px;
+                border: 1px solid gray;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .sign p {
+                font-size: 15px;
+                padding: 5px 5px 5px 5px;
+            }
+
+            .sign button {
+                width: 200px;
+                background-color: rgb(255, 187, 62);
+                padding: 8px 10px 8px 10px;
+                border-radius: 5px;
+                border: none;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+            .sign button:hover {
+                background-color: rgb(245, 191, 91);
+            }
+
+            h6 {
+                padding: 10px 5px 5px 5px;
+                color: black;
+            }
+
+            /* CONTAINER-9  */
+            .container-9 {
+                width: 100%;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                /* border: 2px solid green; */
+                background-color: #232f3e;
+                border: none;
+            }
+
+            .container-9 button {
+                width: 100%;
+                height: 55px;
+                color: white;
+                /* background-color: #232f3e; */
+                background-color: #394352;
+                cursor: pointer;
+                border: none;
+            }
+
+            /* FOOTER-SECTION  */
+            footer {
+                width: 100%;
+                height: 300px;
+                /* border: 2px solid red; */
+                background-color: #232f3e;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            ol h3 {
+                color: white;
+                margin-top: 25px;
+            }
+
+            ol li {
+                color: white;
+                margin-top: 5px;
+            }
+
+
+            /* FOOTER-SECTION-2  */
+            .footer-2 {
+                width: 100%;
+                height: 200px;
+                background-color: #131a22;
+            }
+
+            .foot-1 {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: 100px;
+                /* border: 2px solid white; */
+            }
+
+            .item h5 {
+                color: white;
+            }
+
+            .item li {
+                color: gray;
+                list-style: none;
+                font-size: 10px;
+            }
+
+            .item h5:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .item li:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .foot-2 {
+                width: 100%;
+                height: 70px;
+                /* border: 2px solid white; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .foot-2 p {
+                color: white;
+                margin-top: 5px;
+            }
+
+            .terms {
+                width: 400px;
+                height: 40px;
+                /* border: 2px solid red; */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-end;
+            }
+
+            .terms p {
+                color: white;
+                font-size: 10px;
+            }
+
+
+        }
+
+        @media (max-width: 600px) {
+            * {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body {
+                background-color: lightgray;
+            }
+
+
+            /* NavBar-1  */
+            .navbar-1 {
+                width: 100%;
+                height: 120px;
+                background-color: #0f1111;
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-evenly; */
+                align-items: start;
+                position: fixed;
+            }
+
+            .logo {
+                /* border: 2px solid white; */
+                width: 120px;
+                height: 40px;
+                margin-top: 8px;
+                margin-left: 10px;
+            }
+
+            .input-section {
+                /* border: 2px solid palegreen; */
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: 10px;
+            }
+
+            .input-section p {
+                color: gray;
+                background-color: white;
+                height: 25px;
+                width: 25px;
+                padding: 10px 0px 0px 10px;
+                font-size: 13px;
+                font-weight: bolder;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+
+            .input-section input {
+                height: 35px;
+                width: 300px;
+                background-color: white;
+                /* border-radius: 7px; */
+                border: none;
+            }
+
+            input::placeholder {
+                padding-left: 10px;
+                font-size: 12px;
+            }
+
+            #search-icon {
+                color: black;
+                background-color: orange;
+                height: 25px;
+                width: 25px;
+                padding: 10px 0px 0px 10px;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+
+
+            .location {
+                display: none;
+            }
+
+            .accounts {
+                display: none;
+            }
+
+            .cart {
+                display: none;
+            }
+
+            .Navbar-2 {
+                display: none;
+            }
+
+            /* Main-Section  */
+            .poster {
+                width: 100%;
+                height: 300px;
+                margin-top: 100px;
+            }
+
+            #Box-2 {
+                display: none;
+            }
+
+            #Box-4 {
+                display: none;
+            }
+
+            /* Container-1  */
+            .container-1 {
+                width: 100%;
+                height: 880px;
+                /* border: 2px solid black; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .box {
+                width: 90%;
+                height: 420px;
+                background-color: white;
+                /* border: 2px solid red; */
+            }
+
+            #heading {
+                font-size: 15px;
+                font-weight: bolder;
+                padding: 10px 10px;
+            }
+
+            .images {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 5px;
+                grid-row-gap: 12px;
+                grid-column-gap: 8px;
+                margin-top: 5px;
+            }
+
+            .images img {
+                width: 90%;
+                height: 130px;
+                cursor: pointer;
+            }
+
+            #photo {
+                padding-left: 15px;
+            }
+
+            #last-heading {
+                font-size: 13px;
+                color: #007185;
+                font-weight: bolder;
+                padding: 25px 20px;
+            }
+
+            #second-box-last-heading {
+                font-size: 13px;
+                color: #007185;
+                font-weight: bolder;
+                padding: 15px 20px;
+            }
+
+            /* CONTAINER-2  */
+            .container-2 {
+                width: 100%;
+                height: 800px;
+                /* border: 2px solid black; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .farzi {
+                width: 90%;
+                height: 350px;
+                margin-top: 10px;
+            }
+
+            #headphone-section {
+                display: none;
+            }
+
+            #Appliances {
+                margin-top: 20px;
+                height: 420px;
+                /* border: 2px solid red; */
+            }
+
+            /* CONTAINER-3  */
+            .container-3 {
+                width: 100%;
+                height: 880px;
+                /* border: 2px solid black; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .jsn {
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 280px;
+            }
+
+            .jsn img {
+                height: 260px;
+                padding: 0px 12px 0px 12px;
+            }
+
+
+            #first-box {
+                display: none;
+            }
+
+            #last-box {
+                display: none;
+            }
+
+            /* CONTAINER-4  */
+            .container-4 {
+                display: none;
+            }
+
+            /* CONTAINER-5  */
+            .container-5 {
+                width: 100%;
+                height: 880px;
+                /* border: 2px solid black; */
+                /* margin-top: 5px; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            #first-box {
+                display: none;
+            }
+
+            #last-box {
+                display: none;
+            }
+
+            /* CONTAINER-6  */
+            .container-6 {
+                width: 96.5%;
+                height: 200px;
+                /* border: 2px solid rebeccapurple; */
+                background-color: white;
+                margin: 0px 18px;
+                overflow-x: hidden;
+                display: none;
+            }
+
+            .heading-container {
+                width: 100%;
+                height: 55px;
+                display: flex;
+                /* border: 2px solid red; */
+            }
+
+            .kitchen-items {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .kitchen-items img {
+                width: 160px;
+                height: 130px;
+                overflow-x: hidden;
+                /* border: 2px solid black; */
+            }
+
+            /* CONTAINER-7  */
+            .container-7 {
+                width: 100%;
+                height: 880px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                /* border: 2px solid black; */
+            }
+
+            /* CONTINAER-8  */
+            .container-8 {
+                width: 100%;
+                height: 160px;
+                background-color: white;
+                /* border: 1px solid black; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px;
+            }
+
+            .sign {
+                width: 100%;
+                height: 120px;
+                border: 1px solid gray;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .sign p {
+                font-size: 15px;
+                padding: 5px 5px 5px 5px;
+            }
+
+            .sign button {
+                width: 200px;
+                background-color: rgb(255, 187, 62);
+                padding: 8px 10px 8px 10px;
+                border-radius: 5px;
+                border: none;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+            .sign button:hover {
+                background-color: rgb(245, 191, 91);
+            }
+
+            h6 {
+                padding: 10px 5px 5px 5px;
+                color: black;
+            }
+
+            /* CONTAINER-9  */
+            .container-9 {
+                width: 100%;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                /* border: 2px solid green; */
+                background-color: #232f3e;
+                border: none;
+            }
+
+            .container-9 button {
+                width: 100%;
+                height: 45px;
+                color: white;
+                /* background-color: #232f3e; */
+                background-color: #394352;
+                cursor: pointer;
+                border: none;
+            }
+
+            /* FOOTER-SECTION  */
+            footer {
+                width: 100%;
+                height: 500px;
+                /* border: 2px solid red; */
+                background-color: #232f3e;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 0px;
+                grid-column-gap: 10px;
+            }
+
+            ol h3 {
+                color: white;
+                margin-left: 20px;
+                font-size: 18px;
+            }
+
+            ol li {
+                color: white;
+                margin: 10px 20px;
+                font-size: 13px;
+            }
+
+            /* FOOTER-SECTION-2  */
+            .footer-2 {
+                width: 100%;
+                height: 250px;
+                background-color: #131a22;
+                /* border: 2px solid white; */
+            }
+
+            .foot-1 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 0px;
+                grid-column-gap: 10px;
+                width: 100%;
+                height: 140px;
+                margin-top: 18px;
+                /* border: 2px solid white; */
+            }
+
+            .item h5 {
+                color: white;
+                margin-left: 20px;
+            }
+
+
+            .item li {
+                color: gray;
+                list-style: none;
+                font-size: 13px;
+                margin-left: 20px;
+            }
+
+            .foot-2 {
+                width: 100%;
+                height: 70px;
+                /* border: 2px solid white; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .foot-2 p {
+                color: white;
+                margin-top: 5px;
+            }
+
+            .terms {
+                width: 400px;
+                height: 40px;
+                /* border: 2px solid red; */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-end;
+            }
+
+            .terms p {
+                color: white;
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 400px) {
+            .input-section input {
+                height: 35px;
+                width: 250px;
+                /* border-radius: 7px; */
+            }
+
+            .terms p {
+                color: white;
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-1">
+            <!-- amazon-image  -->
+            <img class="logo" src="https://wallpapers.com/images/hd/amazon-logo-black-background-xb9pdemosnjfz9ej.jpg"
+                alt="">
+
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div class="address">
+                    <p>Deliver to Mohd</p>
+                    <p>Hyderabad 500036</p>
+                </div>
+            </div>
+
+            <!-- Search-Bar  -->
+            <div class="input-section">
+                <p>All</p>
+                <input type="text" placeholder="Search Amazon.in">
+                <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="accounts">
+                <p class="first">Hello, Mujtaba</p>
+                <p class="second">Accounts & Lists</p>
+            </div>
+
+            <div class="accounts">
+                <p class="first">Returns</p>
+                <p class="second"> & Orders</p>
+            </div>
+
+            <!-- Cart  -->
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+
+        <!-- NavBar-2  -->
+        <div class="Navbar-2">
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+
+            <p>All</p>
+            <p>Fresh</p>
+            <p>Amazon minniTV</p>
+            <p>Sell</p>
+            <p>Amazon Pay</p>
+            <p>Gift Card</p>
+            <p>Amazon Basic</p>
+            <p>Buy Again</p>
+            <p>Household & Personal Care</p>
+            <p>Browsing History</p>
+            <p>Customer Service</p>
+
+
+        </div>
+    </header>
+
+    <main>
+
+        <img class="poster"
+            src="https://feeds.abplive.com/onecms/images/uploaded-images/2021/10/02/4c0d783d7832682e9915c1497c86a6fd_original.JPG"
+            alt="">
+
+        <!-- CONTAINER-1  -->
+        <div class="container-1">
+            <div class="box">
+                <p id="heading">Revamp your home in style</p>
+
+                <div class="images">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg"
+                        alt="">
+
+                </div>
+
+                <p id="last-heading">Explore all</p>
+            </div>
+
+            <div class="box" id="Box-2">
+                <p id="heading">Upto 60% off | Footwear & <br> hand bags</p>
+
+                <div class="images">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/July/BTF/1st/PC/Shoes-low._SY116_CB554442186_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/July/BTF/1st/Pcqc3-2-low._SY116_CB554637206_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/July/BTF/1st/Pcqc3-3-low._SY116_CB554637206_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/July/BTF/1st/Pcqc3-4-low._SY116_CB554637206_.jpg"
+                        alt="">
+                </div>
+
+                <p id="second-box-last-heading">See all offers</p>
+            </div>
+
+            <div class="box">
+                <p id="heading">Top mobile accessories for <br> you smart phone</p>
+
+                <div class="images">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_3X3._SY116_CB602731451_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_2X2._SY116_CB602731451_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_1X1._SY116_CB602731451_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_4X4._SY116_CB602731451_.jpg"
+                        alt="">
+                </div>
+
+                <p id="second-box-last-heading">See all offers</p>
+            </div>
+
+            <div class="box" id="Box-4">
+                <p id="heading">Escape to paradise | Limited <br> time offers await</p>
+
+                <div class="images">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Primeday_24/PCqc/Flight_PC_QC_186x116._SY116_CB569490457_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Primeday_24/PCqc/BUS_PC_QC_186x116._SY116_CB569490457_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Primeday_24/PCqc/Train_PC_QC_186x116._SY116_CB569490457_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/AmazonPay/Travel/Percolate/Q4/Travel_essentials._SY116_CB560309797_.jpg"
+                        alt="">
+                </div>
+
+                <p id="second-box-last-heading">See all offers</p>
+            </div>
+        </div>
+
+        <!-- CONTAINER-2  -->
+        <div class="container-2">
+
+            <img class="farzi"
+                src="https://m.media-amazon.com/images/S/pv-target-images/ea7bce0351ae14129a1a3c93c7b00b7922bc3d1ebd2f1fe439b991c0d832ff2a._AC_SL792_.jpg"
+                alt="">
+
+            <div class="box" id="headphone-section">
+                <p id="heading">Upto 75% off | Best selling <br> headphones </p>
+
+                <div class="images">
+
+                    <img id="headphones"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/CE/MSO/April/SetE/2_Boat_PC_CC_758x608_1x._SY304_CB560306314_.jpg"
+                        alt="">
+
+                </div>
+
+                <p id="shop-now">Shop Now</p>
+            </div>
+
+            <div class="box" id="Appliances">
+                <p id="heading">Appliances for your home | upto 50% off</p>
+
+                <div class="images">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
+                        alt="">
+
+                </div>
+
+                <p id="last-heading">See more</p>
+            </div>
+        </div>
+
+        <!-- CONTAINER-3 -->
+        <div class="container-3">
+            <div class="box" id="first-box">
+                <p id="heading">You might also like</p>
+
+                <div class="images" id="oil">
+                    <img id="photo" src="https://m.media-amazon.com/images/I/616N+NFakuS._AC_SY170_.jpg" alt="">
+
+                    <img src="https://m.media-amazon.com/images/I/610c+f6qAJL._AC_SY170_.jpg" alt="">
+
+                    <img id="photo" src="https://m.media-amazon.com/images/I/71iILXGxzcL._AC_SY170_.jpg" alt="">
+
+                    <img src="https://m.media-amazon.com/images/I/71d2uTiOMqL._AC_SY170_.jpg" alt="">
+                </div>
+
+                <p id="last-heading">See more</p>
+            </div>
+
+            <div class="box">
+                <p id="heading">Prime Day 20th - 21st July | Brands in focus</p>
+
+                <div class="images">
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/LaptopsPD24_Intel_Ascent/Intel_QuadCard_186x116._SY116_CB554215172_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/tsahtany/PrimeDay/ASCENT/PC_QuadCard186x116._SY116_CB569818057_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HPC/PD/Ascent/Colgate/PC_QC_186x116_02._SY116_CB569768477_.png"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/TVs/Abhilasha/TCL/mi/MI_PC_QuadCard0.5x._SY116_CB569839102_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">See all offers</p>
+            </div>
+
+            <div class="box">
+                <p id="heading">Jamnapur | streaming Now </p>
+
+                <div class="jsn">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/SiddMiniTV/DeskCC-379x304_V1._SY304_CB555943778_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">Check out other exciting shows on minni TV </p>
+            </div>
+
+            <div class="box" id="last-box">
+                <p id="heading">Best Sellers</p>
+
+                <div class="jsn">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2024/GW_Mar/25th/Combo_low_res_2_1_1_1_1._SY304_CB579829084_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">See all offers</p>
+            </div>
+        </div>
+
+        <!-- CONTAINER-4 -->
+        <div class="container-4">
+            <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/3a04a81b-bafd-4f7c-8d08-0b26e5870ce3.jpeg"
+                alt="">
+        </div>
+
+        <!-- CONTAINER-5  -->
+        <div class="container-5">
+
+            <div class="box" id="first-box">
+                <p id="heading">Up to 60% off Start your fitness journey</p>
+
+                <div class="fitness">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Sports/GW_Desktop/1199101_379x304_Compressed._SY304_CB448278349_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">see more</p>
+            </div>
+
+            <div class="box">
+                <p id="heading">One stop shop for all your wedding shopping</p>
+
+                <div class="images">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Wedding-Store/btf/For_her-1_1x._SY116_CB653484282_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Wedding-Store/btf/For_him-1_1x._SY116_CB653484282_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Wedding-Store/btf/Pooja_essentials-1_1x._SY116_CB653484282_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Wedding-Store/btf/Explore_more-1_1x._SY116_CB653484282_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">See more</p>
+            </div>
+
+            <div class="box">
+                <p id="heading">Amazon Fresh Great prices Fruit & Vegetables</p>
+
+                <div class="images">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/BTF_QCs/Dec23/F2V/PC1/AllSubcat_RC_PC_1x_01._SY116_CB570748345_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/BTF_QCs/Dec23/F2V/PC1/AllSubcat_RC_PC_1x_02._SY116_CB570748345_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/BTF_QCs/Dec23/F2V/PC1/AllSubcat_RC_PC_1x_03._SY116_CB570748345_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/BTF_QCs/Dec23/F2V/PC1/AllSubcat_RC_PC_1x_04._SY116_CB570748345_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">See all offers</p>
+            </div>
+
+            <div class="box" id="last-box">
+                <p id="heading">Customers Most-Loved Products</p>
+
+                <div class="images">
+
+                    <img id="photo" src="https://m.media-amazon.com/images/I/41jc30L1jyL._AC_SY145_.jpg" alt="">
+
+                    <img src="https://m.media-amazon.com/images/I/61P8rRWzXUL._AC_SY145_.jpg" alt="">
+
+                    <img id="photo" src="https://m.media-amazon.com/images/I/71-z6ji5R+L._AC_SY145_.jpg" alt="">
+
+                    <img src="https://m.media-amazon.com/images/I/61fgJs4zIqL._AC_SY145_.jpg" alt="">
+                </div>
+
+                <p id="last-heading">Explore more</p>
+            </div>
+        </div>
+
+        <!-- CONTAINER-6  -->
+        <div class="container-6">
+            <div class="heading-container">
+                <p id="heading">Up to 60% off | Inverter batteries, Kitchen tools & more from local stores nearby</p>
+                <p id="last-heading">See all offers</p>
+            </div>
+
+            <div class="kitchen-items">
+                <img src="https://m.media-amazon.com/images/I/41DC55bD3xL._AC_SY200_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/41I5YFtRFnL._AC_SY200_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/71jSWB8bb8L._AC_SY200_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/71P2fYTGhQL._AC_SY200_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/51QmaiNH0dL._AC_SY200_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/418EgQcQHeL._AC_SY200_.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- CONTAINER-7  -->
+        <div class="container-7">
+            <div class="box">
+                <p id="heading">Up to 40% off | Bestsellers from stores nearby</p>
+
+                <div class="images">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/LSPD/E_1._SY116_CB568861692_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/LSPD/F_1._SY116_CB568861692_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/LSPD/A_1._SY116_CB568861692_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/LSPD/B_1._SY116_CB568861692_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">See all offers</p>
+            </div>
+
+            <div class="box" id="last-box">
+                <p id="heading">Upto 70% off | International Brands</p>
+
+                <div class="ib">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/OOC/Gateway/primeday/cons/fur/PC/1/1/PC_CC-PD379X304._SY304_CB569027331_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">See all offers</p>
+            </div>
+
+            <div class="box">
+                <p id="heading">Up to 42% off | Curated Products from Artisans</p>
+
+                <div class="images">
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/karigar/1x_spices._SY116_CB568903597_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/karigar/1x_natural_syrup._SY116_CB568903311_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/karigar/1x_cooking__baking._SY116_CB568902125_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/karigar/1x_storage_organiser._SY116_CB568902077_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">See all offers</p>
+            </div>
+
+
+            <div class="box" id="last-box">
+                <p id="heading">Unique Products form Emerging business</p>
+
+                <div class="images">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/12407722031/Primeday24/Lamp_186x116._SY116_CB568882056_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/12407722031/Primeday24/Bed-Sheet_186x116._SY116_CB568882056_.jpg"
+                        alt="">
+
+                    <img id="photo"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/12407722031/Primeday24/Organizer_186x116._SY116_CB568882056_.jpg"
+                        alt="">
+
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/12407722031/Primeday24/Grinder_186x116._SY116_CB568882056_.jpg"
+                        alt="">
+                </div>
+
+                <p id="last-heading">See all offers</p>
+            </div>
+        </div>
+
+        <!-- CONTAINER-8  -->
+        <div class="container-8">
+            <div class="sign">
+                <p>See personalized recommendations</p>
+                <button id="myButton">Sign in </button>
+                <h6>New Customer?</h6>
+            </div>
+        </div>
+
+        <!-- Back To Top Button  -->
+        <div class="container-9">
+            <button id="scroll-to-top">Back to top</button>
+        </div>
+
+    </main>
+
+    <!-- FOOTER-SECTION  -->
+    <footer>
+        <ol>
+            <h3>Get to Know Us</h3>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Press Releases</li>
+            <li>Amazon Science</li>
+        </ol>
+
+        <ol>
+            <h3>Connect With Us</h3>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+        </ol>
+
+        <ol>
+            <h3>Make Money With Us</h3>
+            <li>Sell on Amazon</li>
+            <li>Protect and build your Brand</li>
+            <li>Amazon Global Selling</li>
+            <li>Fulfilment by Amazon</li>
+            <li>Become an Affiliate</li>
+            <li>Advertise Your Products</li>
+            <li>Amazon Pay on Merchants</li>
+        </ol>
+
+        <ol>
+            <h3>Let Us Help You</h3>
+            <li>COVID-19 and Amazon</li>
+            <li>Your Accounts</li>
+            <li>Returns Center</li>
+            <li>100% Purchase Protection</li>
+            <li>Amazon App Download</li>
+            <li>Help</li>
+        </ol>
+    </footer>
+
+    <div class="footer-2">
+        <div class="foot-1">
+
+            <div class="item">
+                <h5>AbeBooks</h5>
+                <li>Books, art</li>
+                <li>& collections</li>
+            </div>
+
+            <div class="item">
+                <h5>Amazon Web Service</h5>
+                <li>Scable Cloud</li>
+                <li>Computing Services</li>
+            </div>
+
+            <div class="item">
+                <h5>Audible</h5>
+                <li>Download</li>
+                <li>Audio Books</li>
+            </div>
+
+            <div class="item">
+                <h5>IMDB</h5>
+                <li>Movies, Tv</li>
+                <li>& Celebrities</li>
+            </div>
+        </div>
+
+        <div class="foot-2">
+            <div class="terms">
+                <p>Conditions of Use & Sale</p>
+                <p>Privacy Notice</p>
+                <p>Interest-Based-Ads</p>
+            </div>
+
+            <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+
+    </div>
+
+    <script>
+        // Sign-in-Button 
+        document.getElementById("myButton").addEventListener("click", function () {
+            window.open("https://amazon-log-in.netlify.app/", "");
+        });
+
+        // Back to Top Button 
+        const scrollToTopButton = document.getElementById('scroll-to-top');
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'auto' });
+        });
+    </script>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- THE END  -->
+</body>
+
+</html>
